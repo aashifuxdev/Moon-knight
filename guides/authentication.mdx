@@ -1,0 +1,20 @@
+---
+title: "Authentication"
+description: "Authenticate requests with API keys"
+icon: "key"
+---
+
+All API requests require an API key passed in the `Authorization` header.
+
+```bash
+curl https://api.moonknight.dev/v1/projects \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```
+
+<ParamField header="Authorization" type="string" required>
+  Your API key, prefixed with `Bearer `.
+</ParamField>
+
+<Info>
+  You can create and rotate API keys from the dashboard under **Settings → API keys**.
+</Info>

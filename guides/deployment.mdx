@@ -1,0 +1,29 @@
+---
+title: "Deployment"
+description: "Deploy your project to production"
+icon: "cloud-arrow-up"
+---
+
+Deploy with a single command:
+
+```bash
+moon-knight deploy --prod
+```
+
+<Tabs>
+  <Tab title="GitHub Actions">
+    Add `moon-knight deploy --prod` as a step in your workflow after tests pass.
+  </Tab>
+  <Tab title="Manual">
+    Run the deploy command from your local machine after logging in.
+  </Tab>
+</Tabs>
+
+<AccordionGroup>
+  <Accordion title="How long does a deployment take?">
+    Most deployments finish in under two minutes.
+  </Accordion>
+  <Accordion title="Can I roll back?">
+    Yes. Run `moon-knight rollback` to restore the previous version.
+  </Accordion>
+</AccordionGroup>

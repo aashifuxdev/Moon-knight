@@ -1,0 +1,29 @@
+---
+title: "Configuration"
+description: "Customize Moon Knight with a config file"
+icon: "gear"
+---
+
+Moon Knight reads settings from `moonknight.config.json` at your project root.
+
+```json moonknight.config.json
+{
+  "name": "my-project",
+  "region": "us-east-1",
+  "logging": true
+}
+```
+
+## Options
+
+<ResponseField name="name" type="string" required>
+  The project name shown in the dashboard.
+</ResponseField>
+
+<ResponseField name="region" type="string" default="us-east-1">
+  The region where your project is deployed.
+</ResponseField>
+
+<ResponseField name="logging" type="boolean" default="false">
+  Enables verbose logging.
+</ResponseField>
